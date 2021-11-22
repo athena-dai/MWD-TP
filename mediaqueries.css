@@ -1,0 +1,27 @@
+@media only screen and (max-width: 640px) { 
+
+.barrow, .farrow{
+	display: none;
+}
+
+} 
+
+@media only screen and (min-width: 641px) and (max-width: 1025px) {
+
+.card-body{
+	font-size: 12px;
+}
+.barrow{
+	top: 50%;
+	height: 20px;
+}
+
+.farrow{
+	right: 0%;
+	top: 50%;
+} 
+}
+@media only screen and (min-width: 1026px) {
+	
+} 
+ 

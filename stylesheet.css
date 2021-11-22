@@ -1,0 +1,149 @@
+*{
+	color: #ffffff;
+}
+
+body {
+ background: #253551;
+ font-family: "Open Sans", arial, sans-serif;
+ font-size: 100%;
+}
+
+header {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+
+}
+
+.logo {
+  height:60px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header a.active {
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  color: black
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.breadcrumb{
+		margin-left: 30px;
+		margin-top: 10px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+		color: #F4AC45;
+}
+
+b:hover{
+	color:  #F4AC45;
+}
+
+.question{
+	text-align: center;
+}
+
+#map{
+	text-align: center;
+	color: #F4AC45;
+}
+
+#map > p{
+	text-align: center;
+	color: #F4AC45;
+
+}
+
+#map > p > img{
+border-radius: 0px;
+}
+
+.barrow{
+	position: absolute;
+	top: 75%;
+	padding-left:30px;
+}
+
+.farrow{
+	position: absolute;
+	right: 0%;
+	top: 75%;
+	transform: rotate(180deg);
+	padding-left:30px;
+}
+
+.card {
+	border-radius: 10px;
+	background-color: none;
+	box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+img {
+	border-radius: 10px 10px 0px 0px ;
+
+}
+
+.card-body{
+	background-color: #000000;
+	border-radius: 0px 0px 10px 10px;
+	height:100px;
+}
+
+.card-text{
+	padding:10px 5px;
+}
+
+.col {
+	text-align: center;
+}
+
+button{
+	width: 200px;
+}
+
+.centered2 > a{
+	text-decoration: none;
+}
+
+.centered2 > a > img{
+  border-radius: 0px;
+}
+
+.text-end > button{
+	width: 100px;
+}
+
+a{
+	text-decoration: none;
+	color: #253551;
+}
+
+#show{
+	background: #253551;
+	color: #ffffff !important;
+}
