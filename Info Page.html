@@ -13,6 +13,7 @@
             height: auto;
         }
     </style>
+    
   </head>
 
   <body>
@@ -49,47 +50,60 @@
         </div>
       </header>
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <!--Carosuel cover images-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Learning Center.png" class="d-block w-100" alt="slide1" style="height: 500px;">
-            </div>
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="TermProject/tutoring-header.jpg" alt="First slide" style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="TermProject/tutoring-header2.jpg" alt="Second slide" style="height: 500px;">
+          </div>
+          
         </div>
       </div>
 
       <div class="container-fluid">
-        <div class="row">
-            <div id="col-lg-3 col-xl-4-auto">
+        <div class="row info-box">
+            <div class="col-lg-7">
                 <h2>Huntington Learning Center North Hills</h2>
-                <img src="4.5_stars.png" class="rating">
-                <p>Address: 4721 McKnight Rd, Pittsburgh, PA 15237</p>
-                <p>Phone: 412-367-7787</p>
-                <p>Sunday: Open 24 Hours</p>
-                <p>Monday: 12-8:30PM</p>
-                <p>Tuesday: 12-8:30PM</p>
-                <p>Wednesday: 12-8:30PM</p>
-                <p>Thursday: 12-8:30PM</p>
-                <p>Friday: 10AM-2PM</p>
-                <p>Saturday: Open 24 Hours</p>
-                <p>Costs around $10/hr - $15/hr</p>
-                <button>Website</button>
+                <img src="TermProject/4.5_stars.png" class="rating">
+                <p class="orange-text">Address: 4721 McKnight Rd, Pittsburgh, PA 15237</p>
+                <p class="orange-text">Phone: 412-367-7787</p>
+
+                <div class="hours-info">
+                  <p class="hours-text">Sunday: Open 24 Hours</p>
+                  <p class="hours-text">Monday: 12-8:30PM</p>
+                  <p class="hours-text">Tuesday: 12-8:30PM</p>
+                  <p class="hours-text">Wednesday: 12-8:30PM</p>
+                  <p class="hours-text">Thursday: 12-8:30PM</p>
+                  <p class="hours-text">Friday: 10AM-2PM</p>
+                  <p class="hours-text">Saturday: Open 24 Hours</p>
+                </div>
+      
+                <p class="cost-descript">Costs around $10/hr - $15/hr</p>
+                <button class="website-button">Website</button>
+              
+
             </div>
 
-            <div id="col-lg-3 col-xl-4-auto">
-                <br>
-                <button>Insurance-Covered</button>
-                <button>Tutoring for K-12</button>
-                <button>Flexible Hours</button>
-                <br>
-                <button>Math Tutoring</button>
-                <button>English Tutoring</button>
-                <button>Educational</button>
-                <h3>Photos</h3>
-                <img src="">
-                <img src="">
-                <img src="">
+            <div class="col-lg-5">
+                <button class="service-tag">Insurance-Covered</button>
+                <button class="service-tag">Tutoring for K-12</button>
+                <button class="service-tag">Flexible Hours</button>
+                <button class="service-tag">Math Tutoring</button>
+                <button class="service-tag">English Tutoring</button>
+                <button class="service-tag">Educational</button>
+                <div class="photo-section">
+                  <h3>Photos</h3>
+                  <img src="">
+                  <img src="">
+                  <img src="">
+                </div>
+                
             </div>
         </div>
+
       </div>
     </body>
 </html>
