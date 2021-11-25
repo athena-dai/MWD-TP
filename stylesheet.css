@@ -195,6 +195,58 @@ form > img {
   background-color: white;
 }
 
-.blue{
-	color: #253551;
+.blue {
+  color: #253551;
+}
+
+.cost-descript {
+  color: #f4ac45;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.info-box {
+  padding: 20px;
+}
+
+.website-button {
+  background-color: #f4ac45;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.rating {
+  padding-bottom: 10px;
+}
+
+.orange-text {
+  color: #f4ac45;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.hours-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hours-text {
+  line-height: 10px;
+  font-size: 20px;
+}
+
+.service-tag {
+  background-color: #f4ac45;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.photo-section {
+  padding: 20px;
 }
