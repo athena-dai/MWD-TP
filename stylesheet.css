@@ -250,3 +250,11 @@ form > img {
 .photo-section {
   padding: 20px;
 }
+
+#tag-icon {
+  margin: 10px;
+}
+
+#photo-section {
+  margin-top: 20px;
+}
