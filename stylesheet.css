@@ -98,8 +98,18 @@ b:hover {
 
 .card {
   border-radius: 10px;
+  border: none;
+  margin: 0px 20px;
   background-color: none;
   box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cardwhite {
+  border-radius: 10px;
+  border: none;
+  margin: 0px 20px;
+  background-color: none;
+  box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.3);
 }
 
 img {
