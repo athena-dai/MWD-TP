@@ -258,3 +258,8 @@ form > img {
 #photo-section {
   margin-top: 20px;
 }
+
+.gallery-photo {
+  height: 80px;
+  border-radius: 10px;
+}
