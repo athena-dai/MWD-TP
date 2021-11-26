@@ -206,7 +206,7 @@ form > img {
 }
 
 .info-box {
-  padding: 20px;
+  padding: 50px;
 }
 
 .website-button {
@@ -245,6 +245,8 @@ form > img {
   font-weight: bold;
   border-radius: 10px;
   padding: 5px;
+  margin: 5px;
+  justify-content: center;
 }
 
 .photo-section {
@@ -260,6 +262,6 @@ form > img {
 }
 
 .gallery-photo {
-  height: 80px;
+  height: 200px;
   border-radius: 10px;
 }
