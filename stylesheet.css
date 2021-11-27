@@ -120,6 +120,7 @@ img {
   background-color: #000000;
   border-radius: 0px 0px 10px 10px;
   height: 100px;
+  position: relative;
 }
 
 .card-text {
@@ -307,4 +308,10 @@ form > img {
   font-size: 70%;
   width: 80%;
   margin: 10px;
+}
+
+.info-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
 }
