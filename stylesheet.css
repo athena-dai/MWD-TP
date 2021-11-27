@@ -226,6 +226,7 @@ form > img {
   border-radius: 10px;
   padding: 10px;
   width: 200px;
+  margin: 15px;
 }
 
 .rating {
@@ -246,32 +247,63 @@ form > img {
 
 .hours-text {
   line-height: 10px;
-  font-size: 20px;
+  font-size: 100%;
+}
+
+.col-lg-5{
+  padding-left: 50px;
 }
 
 .service-tag {
   background-color: #f4ac45;
   color: black;
   font-weight: bold;
+  font-size: 75%;
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
   justify-content: center;
+  text-align: center;
 }
 
-.photo-section {
-  padding: 20px;
+.service-tag-group {
+  width: 80%;
+  position: relative;
+  bottom: 50px;
+}
+
+.service-tag-group > button{
+  width: auto;
 }
 
 #tag-icon {
-  margin: 10px;
+  position: relative;
+  right: 50px;
 }
 
 #photo-section {
-  margin-top: 20px;
+  position: relative;
+  right: 40px;
 }
 
 .gallery-photo {
-  height: 200px;
+  height: 120px;
   border-radius: 10px;
+}
+
+.col-4 > img{
+  border:  1px;
+  box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.reviews{
+  padding-top: 30px;
+}
+
+.review-content > p{
+  position: relative;
+  bottom: 50px;
+  font-size: 70%;
+  width: 80%;
+  margin: 10px;
 }

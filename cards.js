@@ -12,7 +12,7 @@ function MouseOver()   {
    }
    elements.onclick = function()   {
       if (this.mouseIsOver)   {
-         el.className = 'card-white';   
+         element.className = 'card-white';   
       }
    }
 }
