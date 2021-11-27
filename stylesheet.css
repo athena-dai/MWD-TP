@@ -227,6 +227,7 @@ form > img {
   padding: 10px;
   width: 200px;
   margin: 15px;
+  margin-bottom: 40px;
 }
 
 .rating {
@@ -250,7 +251,7 @@ form > img {
   font-size: 100%;
 }
 
-.col-lg-5{
+.col-lg-5 {
   padding-left: 50px;
 }
 
@@ -272,7 +273,7 @@ form > img {
   bottom: 50px;
 }
 
-.service-tag-group > button{
+.service-tag-group > button {
   width: auto;
 }
 
@@ -291,16 +292,16 @@ form > img {
   border-radius: 10px;
 }
 
-.col-4 > img{
-  border:  1px;
+.col-4 > img {
+  border: 1px;
   box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.reviews{
+.reviews {
   padding-top: 30px;
 }
 
-.review-content > p{
+.review-content > p {
   position: relative;
   bottom: 50px;
   font-size: 70%;
