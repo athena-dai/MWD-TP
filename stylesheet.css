@@ -315,3 +315,7 @@ form > img {
   bottom: 15px;
   right: 20px;
 }
+
+.carousel .carousel-item {
+  transition-duration: 1s;
+}
