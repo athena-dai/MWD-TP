@@ -342,7 +342,11 @@ form > img {
 
 .map-service-card {
   margin: 20px;
-  padding: 20px;
+}
+
+.map-service-card > img{
+  width: 200px;
+  height: 229px;
 }
 
 .map-card-header {
@@ -370,7 +374,7 @@ form > img {
 
 .map-card-hours-text {
   font-size: 12px;
-  line-height: 5px;
+  line-height: 0px;
 }
 
 #distance-slider {
@@ -379,7 +383,7 @@ form > img {
 }
 
 #distance-slider-title {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   padding-top: 10px;
   padding-left: 20px;
@@ -388,4 +392,88 @@ form > img {
 #zipcode-search {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.location{
+  display: inline-flex;
+}
+
+#slider{
+  position: relative;
+  bottom: 20px;
+}
+
+#slider > p{
+  font-size: 12px;
+  display: inline-flex;
+  position: relative;
+  bottom: 10px;
+}
+
+.ml{
+  float: right;
+}
+
+.recommended{
+  position: relative;
+  bottom: 30px;
+}
+
+.filter > button{
+  color: #000000;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2; 
+  cursor: pointer;
+  color: black;
+}
+
+.overlay-content{
+  color: black;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  top: 20%;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.service-tag-group-overlay {
+  width: 80%;
+}
+
+.service-tag-group-overlay > button {
+  width: auto;
+}
+
+.submit-overlay{
+  background-color: #253551;
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+label{
+  color: black;
+}
+
+.overlay-head{
+  color: black;
+  font-weight: bold;
 }

@@ -42,9 +42,6 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><b href="#">Parent</b></li>
               <li class="breadcrumb-item"><b href="#">Guardian of Child with Learning Disability</b></li>
-              <li class="breadcrumb-item"><b href="#">Grade of Child</b></li>
-              <li class="breadcrumb-item"><b href="#">Subject</b></li>
-              <li class="breadcrumb-item"><b href="#">Math</b></li>
               <p class="text-warning"> &nbsp; / &nbsp;</p>
               <li class="breadcrumb-item active" aria-current="page">11111</li>
             </ol>
@@ -53,15 +50,22 @@
         <div class="row">
             <!-- Left section of page-->
             <div class="col-lg-6">
-                <!-- Search input-->
-                <div class="form-outline" id="zipcode-search">
-                    <input type="search" id="form1" class="form-control" placeholder="Zipcode"
-                    aria-label="Search" />
+                <div class= "location">
+                    <!-- Search input-->
+                    <div class=" col-lg-5 form-outline" id="zipcode-search">
+                        <input type="search" id="form1" class="form-control" placeholder="Zipcode"
+                        aria-label="Search" />
+                    </div>
+                    <!-- Distance slider -->
+                    <div id="slider" class=" col-md-7">
+                        <label for="customRange3" id="distance-slider-title">Distance</label>
+                        <input type="range" class="form-range" min="0" max="5" step="0.1" id="distance-slider">
+                        <p>.5 miles</p> <p class="ml">5 miles</p>
+                    </div>
                 </div>
-                <!-- Distance slider -->
-                <label for="customRange3" id="distance-slider-title">Distance</label>
-                <input type="range" class="form-range" min="0" max="5" step="0.5" id="distance-slider">
-                    <div class="card flex-row map-service-card h-50 w-70"><img src="clinic.jpg" style="width: 200px;"/>
+                
+                <div class="recommended">
+                    <div class="card flex-row map-service-card"><img src="TermProject/map/clinic.jpg"/>
                         <div class="card-body map-card-body">
                         <p class="map-card-header">Dr. Lee's Medical Clinic</p>
                         <a class="map-card-address" 
@@ -78,7 +82,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="card flex-row map-service-card h-50 w-70"><img src="clinic.jpg" style="width: 200px;"/>
+                    <div class="card flex-row map-service-card"><img src="TermProject/map/clinic1.jpg"/>
                       <div class="card-body map-card-body">
                       <p class="map-card-header">Dr. Lee's Medical Clinic</p>
                       <a class="map-card-address" 
@@ -95,7 +99,7 @@
                       </div>
                       </div>
                   </div>
-                  <div class="card flex-row map-service-card h-50 w-70"><img src="clinic.jpg" style="width: 200px;"/>
+                  <div class="card flex-row map-service-card"><img src="TermProject/map/clinic2.jpg"/>
                     <div class="card-body map-card-body">
                     <p class="map-card-header">Dr. Lee's Medical Clinic</p>
                     <a class="map-card-address" 
@@ -111,15 +115,15 @@
                       <p class="map-card-hours-text">Saturday: Open 24 Hours</p>
                     </div>
                     </div>
+                  </div>
                 </div>
-                    
             </div>
 
             <!-- Right section of page-->
             <div class="col-lg-6">
                 <!-- Filter button -->
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="btn-group filter">
+                    <button class="btn btn-secondary btn-sm bg-white dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="on()">
                       Filter
                     </button>
                     <div class="dropdown-menu">
@@ -132,11 +136,66 @@
                 <!-- Map -->
                 <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                      style="border:0" allowfullscreen></iframe>
+                      style="border:0; padding:20px;" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+        <div id="overlay" onclick="off()">
+            <div class= "overlay-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 p-4 text-dark">
+                            <h4 class="overlay-head">Price</h4>
 
+                            <form action="/action_page.php">
+                              <input type="checkbox">
+                              <label for="vehicle1"> $0hr - $20hr</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle2"> $20hr - $30hr</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle3"> $40hr +</label><br><br>
+                            </form>
+
+                            <h4 class="overlay-head">Accepted Insurances</h4>
+
+                            <form action="/action_page.php">
+                              <input type="checkbox">
+                              <label for="vehicle1"> All</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle2"> Aetna</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle3"> Blue Shield</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle1"> UPMC</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle2"> Cigna</label><br>
+                              <input type="checkbox">
+                              <label for="vehicle3"> Others</label><br><br>
+                            </form>
+                        </div>
+                        <div class="col-lg-7 p-4">
+                            <h4 class="overlay-head">Tags</h4>
+                            <div class="form-outline p-3" id="zipcode-search">
+                                <input type="search" id="form1" class="form-control" placeholder="Keywords"
+                                aria-label="Search" />
+                            </div>
+                            <p class="overlay-head">Suggested</p>
+                            <div class="service-tag-group-overlay">
+                              <button class="service-tag">Insurance-Covered</button>
+                              <button class="service-tag">Tutoring for K-12</button>
+                              <button class="service-tag">Flexible Hours</button>
+                              <button class="service-tag">Math Tutoring</button>
+                              <button class="service-tag">English Tutoring</button>
+                              <button class="service-tag">Educational</button>
+                            </div>
+                            <br><br><br><br>
+                            <input class="submit-overlay" type="Apply Filters" value="Apply Filters">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
-
+    <script src="overlay.js"></script>
 </html>
