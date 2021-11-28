@@ -334,3 +334,43 @@ form > img {
   width: 100%;
   position: absolute;
 }
+
+[class^="map-card"] {
+  color: black;
+  font-size: 13px;
+}
+
+.map-service-card {
+  margin: 20px;
+  padding: 20px;
+}
+
+.map-card-header {
+  line-height: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Open Sans", arial, sans-serif;
+}
+.map-card-body {
+  background-color: white;
+}
+
+.map-card-phone {
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.map-card-address {
+  font-weight: bold;
+}
+
+.map-card-address:hover {
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.map-card-hours-text {
+  line-height: 5px;
+  font-size: 12px;
+}

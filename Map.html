@@ -51,30 +51,73 @@
         </nav>
 
         <div class="row">
-            <div class="col-5">
+            <!-- Left section of page-->
+            <div class="col-6">
+                <!-- Search input-->
                 <div class="form-outline">
                     <input type="search" id="form1" class="form-control" placeholder="Type query"
                     aria-label="Search" />
                 </div>
+                <!-- Distance slider -->
                 <label for="customRange3" class="form-label">Example range</label>
                 <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-                    <div class="card flex-row"><img class="card-img-left example-card-img-responsive" src="clinic.jpg" style="width: 200px;"/>
-                        <div class="card-body">
-                        <p class="card-text">Example text</p>
+                    <div class="card flex-row map-service-card h-50 w-70"><img src="clinic.jpg" style="width: 200px;"/>
+                        <div class="card-body map-card-body">
+                        <p class="map-card-header">Dr. Lee's Medical Clinic</p>
+                        <a class="map-card-address" 
+                          href="https://www.google.com/maps/place/4721+McKnight+Rd,+Pittsburgh,+PA+15237/@40.5178257,-80.0079056,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f3570191a549:0x1f03e3c65a6be8c0!8m2!3d40.5178257!4d-80.0057169">Address: 4721 McKnight Rd, Pittsburgh, PA 15237</a>
+                        <p class="map-card-phone">Phone: 412-367-7787</p>
+                        <div>
+                          <p class="map-card-hours-text">Sunday: Open 24 Hours</p>
+                          <p class="map-card-hours-text">Monday: 12-8:30PM</p>
+                          <p class="map-card-hours-text">Tuesday: 12-8:30PM</p>
+                          <p class="map-card-hours-text">Wednesday: 12-8:30PM</p>
+                          <p class="map-card-hours-text">Thursday: 12-8:30PM</p>
+                          <p class="map-card-hours-text">Friday: 10AM-2PM</p>
+                          <p class="map-card-hours-text">Saturday: Open 24 Hours</p>
+                        </div>
                         </div>
                     </div>
-                    <div class="card flex-row"><img class="card-img-left example-card-img-responsive" src="clinic.jpg" style="width: 200px;"/>
-                        <div class="card-body">
-                        <p class="card-text">Example text</p>
-                        </div>
+                    <div class="card flex-row map-service-card h-50 w-70"><img src="clinic.jpg" style="width: 200px;"/>
+                      <div class="card-body map-card-body">
+                      <p class="map-card-header">Dr. Lee's Medical Clinic</p>
+                      <a class="map-card-address" 
+                        href="https://www.google.com/maps/place/4721+McKnight+Rd,+Pittsburgh,+PA+15237/@40.5178257,-80.0079056,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f3570191a549:0x1f03e3c65a6be8c0!8m2!3d40.5178257!4d-80.0057169">Address: 4721 McKnight Rd, Pittsburgh, PA 15237</a>
+                      <p class="map-card-phone">Phone: 412-367-7787</p>
+                      <div>
+                        <p class="map-card-hours-text">Sunday: Open 24 Hours</p>
+                        <p class="map-card-hours-text">Monday: 12-8:30PM</p>
+                        <p class="map-card-hours-text">Tuesday: 12-8:30PM</p>
+                        <p class="map-card-hours-text">Wednesday: 12-8:30PM</p>
+                        <p class="map-card-hours-text">Thursday: 12-8:30PM</p>
+                        <p class="map-card-hours-text">Friday: 10AM-2PM</p>
+                        <p class="map-card-hours-text">Saturday: Open 24 Hours</p>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="card flex-row map-service-card h-50 w-70"><img src="clinic.jpg" style="width: 200px;"/>
+                    <div class="card-body map-card-body">
+                    <p class="map-card-header">Dr. Lee's Medical Clinic</p>
+                    <a class="map-card-address" 
+                      href="https://www.google.com/maps/place/4721+McKnight+Rd,+Pittsburgh,+PA+15237/@40.5178257,-80.0079056,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f3570191a549:0x1f03e3c65a6be8c0!8m2!3d40.5178257!4d-80.0057169">Address: 4721 McKnight Rd, Pittsburgh, PA 15237</a>
+                    <p class="map-card-phone">Phone: 412-367-7787</p>
+                    <div>
+                      <p class="map-card-hours-text">Sunday: Open 24 Hours</p>
+                      <p class="map-card-hours-text">Monday: 12-8:30PM</p>
+                      <p class="map-card-hours-text">Tuesday: 12-8:30PM</p>
+                      <p class="map-card-hours-text">Wednesday: 12-8:30PM</p>
+                      <p class="map-card-hours-text">Thursday: 12-8:30PM</p>
+                      <p class="map-card-hours-text">Friday: 10AM-2PM</p>
+                      <p class="map-card-hours-text">Saturday: Open 24 Hours</p>
                     </div>
-                    <div class="card flex-row"><img class="card-img-left example-card-img-responsive" src="clinic.jpg" style="width: 200px;"/>
-                        <div class="card-body">
-                        <p class="card-text">Example text</p>
-                        </div>
                     </div>
+                </div>
+                    
             </div>
+
+            <!-- Right section of page-->
             <div class="col-6">
+                <!-- Filter button -->
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Filter
@@ -85,6 +128,8 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </div>
+
+                <!-- Map -->
                 <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                       style="border:0" allowfullscreen></iframe>
