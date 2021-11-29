@@ -77,7 +77,7 @@
               <p class="card-text">School or educational support</p>
               <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="on()">
                 <div class="icon">
-                <img class="info float-right info-icon" onmouseover="on()" id = "school-info" src="TermProject/icons/information-icon.png">
+                <img class="info float-right info-icon" id = "school-info" src="TermProject/icons/information-icon.png">
                 </div>
                 </button>
             </div>
@@ -91,7 +91,7 @@
             <img src="TermProject/services/supportgroup.png" alt="search">
             <div class="card-body">
               <p class="card-text">Finding a support group</p>
-              <img class="info float-right info-icon" src="TermProject/icons/information-icon.png">
+              <img class="info float-right info-icon" id = "support-info" src="TermProject/icons/information-icon.png">
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
            <img src="TermProject/services/accomodations.png" alt="search">
             <div class="card-body">
               <p class="card-text">Learning how to receive accommodations</p>
-              <img class="info float-right info-icon" src="TermProject/icons/information-icon.png">
+              <img class="info float-right info-icon" id = "accom-info" src="TermProject/icons/information-icon.png">
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
            <img src="TermProject/services/lawyer.png" alt="search">
             <div class="card-body">
               <p class="card-text">Finding a lawyer for discrimination claim</p>
-              <img class="info float-right info-icon" src="TermProject/icons/information-icon.png">
+              <img class="info float-right info-icon" id = "lawyer-info" src="TermProject/icons/information-icon.png">
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
            <img src="TermProject/services/therapist.png" alt="search">
             <div class="card-body">
               <p class="card-text">Finding a therapist or medical support</p>
-              <img class="info float-right info-icon" src="TermProject/icons/information-icon.png">
+              <img class="info float-right info-icon" id = "med-info" src="TermProject/icons/information-icon.png">
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@
             <img src="TermProject/services/advocate.png" alt="search">
             <div class="card-body">
               <p class="card-text">Learning how to advocate for yourself</p>
-              <img class="info float-right info-icon" src="TermProject/icons/information-icon.png">
+              <img class="info float-right info-icon" id = "advoc-info" src="TermProject/icons/information-icon.png">
             </div>
           </div>
         </div>
@@ -150,11 +150,13 @@
     </div>
   </div>
   <br><br><br>
-  <div id="overlay" onclick="off()">
-            <div class= "overlay-content">
-            </div>
+
+  <div id="info-overlay" onclick="hideInfo()">
+    <h1 id = "info-text"> Info here </h1>
   </div>
+  
   <script type="text/javascript" src="profiledrop.js"></script>
+  <script src="services.js"></script>
 </body>
 
 </html>
