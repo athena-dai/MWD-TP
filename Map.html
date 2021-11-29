@@ -31,14 +31,14 @@
                </form>
 
                <div class="dropdown">
-                   <button onclick="myFunction()" class="dropbtn bg-white"><img src="TermProject/character1.png" alt="mdo" width="40" height="40" onclick="myFunction()"></button>
-                 <div id="myDropdown" class="dropdown-content">
-                   <a href="#groups">My Groups</a>
-                   <a href="#settings">Settings</a>
-                   <a href="#profile">Profile</a>
-                   <a href="#signout">Sign out</a>
-                 </div>
-               </div>
+                           <button onclick="myFunction()" class="dropbtn bg-white"><img src="TermProject/character1.png" alt="mdo" width="40" height="40" onclick="myFunction()"></button>
+                         <div id="myDropdown" class="dropdown-content">
+                           <a href="#groups">My Groups</a>
+                           <a href="#settings">Settings</a>
+                           <a href="#profile">Profile</a>
+                           <a href="#signout">Sign out</a>
+                         </div>
+                       </div>
              </div>
            </div>
        </header>
@@ -149,8 +149,26 @@
                 <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                       style="border:0; padding:20px;" allowfullscreen></iframe>
+
+                    <div class="map-filters">
+                      <form action="/action_page.php">
+                            <input type="checkbox">
+                            <label for="vehicle1"> All</label><br>
+                            <input type="checkbox">
+                            <label for="vehicle2"> Medical</label><br>
+                            <input type="checkbox">
+                            <label for="vehicle3"> Educational</label><br>
+                            <input type="checkbox">
+                            <label for="vehicle1"> Legal</label><br>
+                            <input type="checkbox">
+                            <label for="vehicle2"> Advocates</label><br>
+                            <input type="checkbox">
+                            <label for="vehicle3"> Support Groups</label><br><br>
+                          </form>
+                    </div>
                 </div>
-            </div>
+                </div>
+                
         </div>
         <div id="overlay" onclick="off()">
             <div class= "overlay-content">
@@ -159,7 +177,7 @@
                         <div class="col-lg-5 p-4 text-dark">
                             <h4 class="overlay-head">Price</h4>
 
-                            <form action="/action_page.php">
+                            <form class="overlay-form" action="/action_page.php">
                               <input type="checkbox">
                               <label for="vehicle1"> $0hr - $20hr</label><br>
                               <input type="checkbox">
@@ -170,7 +188,7 @@
 
                             <h4 class="overlay-head">Accepted Insurances</h4>
 
-                            <form action="/action_page.php">
+                            <form class="overlay-form" action="/action_page.php">
                               <input type="checkbox">
                               <label for="vehicle1"> All</label><br>
                               <input type="checkbox">
@@ -208,6 +226,8 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="profiledrop.js"></script>
+        <script src="overlay.js"></script>
     </body>
-    <script src="overlay.js"></script>
+    
 </html>

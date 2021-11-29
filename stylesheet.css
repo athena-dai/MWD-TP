@@ -413,6 +413,16 @@ form > img {
   bottom: 10px;
 }
 
+input[type=range]::-webkit-slider-thumb {
+    background: #F4AC45;
+}
+input[type=range]::-moz-range-thumb {
+    background: #F4AC45;
+}
+input[type=range]::-ms-thumb {
+    background: #F4AC45;
+}
+
 .ml{
   float: right;
 }
@@ -472,7 +482,7 @@ form > img {
   justify-content: center;
 }
 
-form > label{
+.overlay-form > label{
   color: black;
 }
 
@@ -520,4 +530,16 @@ form > label{
 
 .dropbtn{
   background-color: none;
+}
+
+.map-filters{
+  background-color: #000000;
+  border-radius: 10px;
+  color:  white;
+  padding: 10px;
+  width: 25%;
+  position: relative;
+  bottom: 480px;
+  left: 550px;
+  z-index: 2;
 }
