@@ -27,21 +27,18 @@
           <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
         </form>
 
-        <div class="dropdown text-end">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="TermProject/character1.png" alt="mdo" width="40" height="40">
-          </a>
-          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img src="TermProject/character1.png" alt="mdo" width="40" height="40"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#groups">My Groups</a>
+            <a href="#settings">Settings</a>
+            <a href="#profile">Profile</a>
+            <a href="#signout">Sign out</a>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+</header>
 
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -57,7 +54,7 @@
    		<h2>What services are you looking for?</h2>
 	</div>
    <div id="map">
-   	<p>I'm not sure <img src="TermProject/icons/map-orange.png"></p>
+   	<a href="Map.html"><p>I'm not sure <img src="TermProject/icons/map-orange.png"></p></a>
    </div>
    <a href="index.html"></a>
    
@@ -77,9 +74,9 @@
             <img src="TermProject/services/school.png" alt="search">
             <div class="card-body">
               <p class="card-text">School or educational support</p>
-              <img class="info float-right info-icon" id = "school-info" 
-                onclick = "myFunction()" src="TermProject/icons/information-icon.png">
-
+              <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="on()">
+                <img class="info float-right info-icon" id = "school-info" src="TermProject/icons/information-icon.png">
+                </button>
             </div>
           </div>
         </div>
@@ -150,7 +147,11 @@
     </div>
   </div>
   <br><br><br>
-  <script type="text/javascript" src="services.js"></script>
+  <div id="overlay" onclick="off()">
+            <div class= "overlay-content">
+            </div>
+  </div>
+  <script type="text/javascript" src="profiledrop.js"></script>
 </body>
 
 </html>
