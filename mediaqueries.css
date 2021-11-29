@@ -32,6 +32,31 @@
     bottom: 0px;
     top: 20px;
   }
+
+  .map-service-card > img {
+    display: none;
+  }
+
+  .map-card-hours-text{
+    display: none;
+  }
+
+  .map-card-address{
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .map-card-phone{
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .recommended{
+    position: relative;
+    top: 5px;
+  }
 }
 
 /* tablet screen */

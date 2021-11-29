@@ -14,7 +14,7 @@
     <header class="p-3 mb-3 border-bottom">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <a href="StartPage.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
               <img class="logo" src="TermProject/logo.png">
             </a>
 
@@ -28,13 +28,18 @@
               <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
             </form>
 
-            <div class="text-end">
-              <button type="button" class="btn me-2">Login</button>
-              <button type="button" class="btn btn-warning">Sign-up</button>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn bg-white"><img src="TermProject/character1.png" alt="mdo" width="40" height="40" onclick="myFunction()"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#groups">My Groups</a>
+                <a href="#settings">Settings</a>
+                <a href="#profile">Profile</a>
+                <a href="#signout">Sign out</a>
+              </div>
             </div>
           </div>
         </div>
-      </header>
+    </header>
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -68,10 +73,10 @@
             </form>
 
             <br><br><br>
-            <button type="button" class="btn btn-warning btn-lg"><a href="services.html">Help me look!</a></button>
+            <button type="button" class="btn btn-warning btn-lg"><a href="Map.html">Help me look!</a></button>
             <br>
             <br>
-            <a href="#">Find on a map <img src="TermProject/icons/map-orange.png"></a>
+            <a href="Map.html">Find on a map <img src="TermProject/icons/map-orange.png"></a>
         </div>
       </div>
       <br><br>

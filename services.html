@@ -13,7 +13,7 @@
 <header class="p-3 mb-3 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <a href="StartPage.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
           <img class="logo" src="TermProject/logo.png">
         </a>
 
@@ -28,7 +28,7 @@
         </form>
 
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img src="TermProject/character1.png" alt="mdo" width="40" height="40"></button>
+            <button onclick="myFunction()" class="dropbtn bg-white"><img src="TermProject/character1.png" alt="mdo" width="40" height="40" onclick="myFunction()"></button>
           <div id="myDropdown" class="dropdown-content">
             <a href="#groups">My Groups</a>
             <a href="#settings">Settings</a>
@@ -53,9 +53,10 @@
 	<div class="question">
    		<h2>What services are you looking for?</h2>
 	</div>
+  <a href="Map.html">
    <div id="map">
-   	<a href="Map.html"><p>I'm not sure <img src="TermProject/icons/map-orange.png"></p></a>
-   </div>
+   	<p>I'm not sure <img src="TermProject/icons/map-orange.png"></p>
+   </div></a>
    <a href="index.html"></a>
    
    <div class="album">
@@ -75,7 +76,9 @@
             <div class="card-body">
               <p class="card-text">School or educational support</p>
               <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="on()">
-                <img class="info float-right info-icon" id = "school-info" src="TermProject/icons/information-icon.png">
+                <div class="icon">
+                <img class="info float-right info-icon" onmouseover="on()" id = "school-info" src="TermProject/icons/information-icon.png">
+                </div>
                 </button>
             </div>
           </div>

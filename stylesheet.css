@@ -7,11 +7,13 @@ body {
   background: #253551;
   font-family: "Open Sans", arial, sans-serif;
   font-size: 100%;
+  z-index: 1;
 }
 
 header {
   overflow: hidden;
   background-color: #ffffff;
+  z-index: 99;
 }
 
 .header a {
@@ -356,6 +358,7 @@ form > img {
 }
 .map-card-body {
   background-color: white;
+  border-radius: 10px;
 }
 
 .map-card-phone {
@@ -491,13 +494,13 @@ form > label{
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  right: 0;
-  z-index: 3;
+  right: 20;
+  z-index: 99;
 }
 
 .dropdown-content a {
