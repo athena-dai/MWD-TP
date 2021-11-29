@@ -421,18 +421,17 @@ form > img {
   bottom: 10px;
 }
 
+input[type="range"]::-webkit-slider-thumb {
+  background: #f4ac45;
+}
+input[type="range"]::-moz-range-thumb {
+  background: #f4ac45;
+}
+input[type="range"]::-ms-thumb {
+  background: #f4ac45;
+}
 
-input[type=range]::-webkit-slider-thumb {
-    background: #F4AC45;
-}
-input[type=range]::-moz-range-thumb {
-    background: #F4AC45;
-}
-input[type=range]::-ms-thumb {
-    background: #F4AC45;
-}
-
-.ml{
+.ml {
   float: right;
 }
 
@@ -443,6 +442,25 @@ input[type=range]::-ms-thumb {
 
 .filter > button {
   color: #000000;
+}
+
+#info-overlay {
+  display: none;
+  margin: auto;
+  align-content: center;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 300px;
+  justify-content: center;
+  background-color: red;
+  border-radius: 20px;
+}
+
+#info-text {
+  color: black;
+  text-align: center;
 }
 
 #overlay {
@@ -491,7 +509,7 @@ input[type=range]::-ms-thumb {
   justify-content: center;
 }
 
-.overlay-form > label{
+.overlay-form > label {
   color: black;
 }
 
@@ -541,10 +559,10 @@ input[type=range]::-ms-thumb {
   background-color: none;
 }
 
-.map-filters{
+.map-filters {
   background-color: #000000;
   border-radius: 10px;
-  color:  white;
+  color: white;
   padding: 10px;
   width: 25%;
   position: relative;
@@ -552,4 +570,3 @@ input[type=range]::-ms-thumb {
   left: 550px;
   z-index: 2;
 }
-
