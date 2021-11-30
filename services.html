@@ -75,11 +75,9 @@
             <img src="TermProject/services/school.png" alt="search">
             <div class="card-body">
               <p class="card-text">School or educational support</p>
-              <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="on()">
                 <div class="icon">
                 <img class="info float-right info-icon" id = "school-info" src="TermProject/icons/information-icon.png">
                 </div>
-                </button>
             </div>
           </div>
         </div>
@@ -152,7 +150,9 @@
   <br><br><br>
 
   <!-- Pops up when info icon is clicked, and hidden otherwise-->
-  <div id="info-overlay" onclick="hideInfo()">
+  <div id="overlay" onclick="hideInfo()">
+  </div>
+  <div id="info-overlay">
 
     <div class = "info-box">
       <h3 id="info-header"></h3>
@@ -161,7 +161,9 @@
 
   </div>
   
+  
   <script type="text/javascript" src="profiledrop.js"></script>
+  <script src="overlay.js"></script>
   <script src="services.js"></script>
 </body>
 

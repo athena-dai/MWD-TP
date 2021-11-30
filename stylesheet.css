@@ -452,10 +452,11 @@ input[type="range"]::-ms-thumb {
   top: 20%;
   left: 25%;
   width: 50%;
-  height: 300px;
+  height: auto;
   justify-content: center;
   background-color: white;
   border-radius: 20px;
+  z-index: 3;
 }
 #info-header {
   color: black;
