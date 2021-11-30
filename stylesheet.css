@@ -454,13 +454,21 @@ input[type="range"]::-ms-thumb {
   width: 50%;
   height: 300px;
   justify-content: center;
-  background-color: red;
+  background-color: white;
   border-radius: 20px;
 }
-
+#info-header {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
 #info-text {
   color: black;
   text-align: center;
+}
+
+.info-box {
+  padding: 40px;
 }
 
 #overlay {
