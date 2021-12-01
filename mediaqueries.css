@@ -1,5 +1,6 @@
 /* phone screen */
 @media only screen and (max-width: 640px) {
+  /* Don't need forward backward arrows for small screens */
   .barrow,
   .farrow {
     display: none;
@@ -14,6 +15,7 @@
     padding-top: 50px;
   }
 
+  /* Column drop split screen on phone */
   .split {
     width: 100%;
     position: static;
